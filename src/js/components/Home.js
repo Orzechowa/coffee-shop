@@ -32,7 +32,7 @@ class Home {
       });
   }
   renderProducts(products) {
-    const productsList = document.querySelector('.box-main')
+    const productsList = document.querySelector('.box-main');
 
     for(let product of products){
       const html= templates.product(product);

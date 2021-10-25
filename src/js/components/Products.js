@@ -33,7 +33,7 @@ class Products {
       });
   }
   renderProducts(products) {
-    const productsList = document.querySelector('.products')
+    const productsList = document.querySelector('.products');
 
     for(let product of products){
       const html= templates.product(product);

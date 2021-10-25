@@ -1,0 +1,27 @@
+
+
+.contact {
+    text-align: center;
+}
+.main {
+    display: inline-block;
+    text-align: center;
+}
+form {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: space-around;
+	min-width: 250px;
+	max-width: 500px;
+	padding: 30px;
+	text-align: center;
+	height: 400px;
+}
+input, textarea, button {
+    display: flex;
+	flex-flow: column;
+	margin: 15px 0;
+	font-family: $font-text;
+}
+

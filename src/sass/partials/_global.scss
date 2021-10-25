@@ -1,4 +1,10 @@
+#sides > section {
+  display: none;
 
+  &.active {
+    display: block;
+  }
+}
 body {
   margin: 0;
   background: lighten($black, 75%);
