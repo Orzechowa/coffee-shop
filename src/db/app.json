@@ -4,9 +4,8 @@
         "id": "01",
         "title": "LA LAGARTIJA",
         "description":"Mysterious and treacherous... The best choice for the start of yournej! It will provide you a rich delicious flavor.",
-        "image":[
-            "<img src=\"images/coffee-1.png\">"
-        ],
+        "image": "<img src=\"images/coffee-1.png\">",
+        
         "roasting": "5/10",
         "intensity": "6/10"
     },
@@ -15,9 +14,7 @@
         "id": "02",
         "title": "EL TIGRE",
         "description":"Really dark coffee, only for the real gourmets. It has bitter flavor of grapefruits and is mixed with a little bit of peanuts with caramel.",
-        "image":[
-            "<img src=\"images/coffee-2.png\">"
-        ],
+        "image":"<img src=\"images/coffee-2.png\">",
         "roasting": "8/10",
         "intensity": "9/10"
 
@@ -26,9 +23,7 @@
         "id": "03",
         "title": "LA CUCARACHA",
         "description":"Sweet and intense with a big amount of different flavors. Caramel, grapes, strawberry, you name it! It's great choice for warm summer days.",
-        "image":[
-            "<img src=\"images/coffee-3.png\">"
-        ],
+        "image": "<img src=\"images/coffee-3.png\">",
         "roasting": "3/10",
         "intensity": "7/10"
 
