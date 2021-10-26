@@ -4,15 +4,16 @@
 }
 
 .page-title {
-    font-size: 26px;
-    font-family: $font-text;
-    color: #BEA67C;
+  font-size: 26px;
+  font-family: $font-text;
+  color: #BEA67C;
 
 
 }
+
 h2{
-    font-size: 15px;
-    color: black;
+  font-size: 15px;
+  color: black;
    
 
 }
@@ -31,6 +32,7 @@ input, textarea, button {
   flex-flow: column;
   font-family: $font-text;
 }
+
 .btn{
   display: inline-block;
   min-width: 160px;
@@ -44,6 +46,6 @@ input, textarea, button {
   border-style: solid;
   background-position: 100% 0;
   background-size: 300%;
-  color:#BEA67C;
+  color: #BEA67C;
 }
 

@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,600&display=swap" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -21,7 +22,7 @@
           <a href="#products">Products</a>
           <a href="#contact">Contact</a>
         </div>
-        <h2 class="logo__subtitle">HOME OF<br> ORIGINAL TASTE<hr style="width: 40%; background: #BEA67C; height: 5px"></h2>
+        <h2 class="logo__subtitle">HOME OF<br> ORIGINAL TASTE </h2>
     </div>
   </header>
   <div id="sides">
@@ -48,13 +49,38 @@
        
       </div>
     </section>
-    <section class="about">
-      <div class= "container">
-        <h2 class="us">ABOUT US <hr style="width: 40%; background: #BEA67C; height: 5px"></h2>
-        <a>Who are we? Just a bunch of friends with a love for a good coffee and desire to create something new, something original. </a>
-        <a>Our coffees reflect us - young, wild and free.<br>We are on the journey of new tastes...</a>
-      </div>
-    </section>
+    <section class="main-carousel">
+      <article class="carousel-cell">
+        <div class="carousel-image">
+          <img src="images/1.png">
+        </div>
+        <div class="carousel-post">
+          <h1> ABOUT US <hr style="width: 40%; background: #BEA67C; height: 5px"></h1>
+          <h3>Ping Nihao</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </article>
+      <article class="carousel-cell">
+        <div class="carousel-image">
+          <img src="images/2.png">
+        </div>
+        <div class="carousel-post">
+          <h1> ABOUT US <hr style="width: 40%; background: #BEA67C; height: 5px"></h1>
+          <h3>Max Selfish/h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </article>
+      <article class="carousel-cell">
+        <div class="carousel-image">
+          <img src="images/3.png">
+        </div>
+        <div class="carousel-post">
+          <h1> ABOUT US <hr style="width: 40%; background: #BEA67C; height: 5px"></h1>
+          <h3>Elizabeth Doherty</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </article>  
+      </section>
   </script>
   <script id="template-product" type="text/x-handlebars-template">
     <div class="box-product">
@@ -95,6 +121,7 @@
     </div>
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> 
   <script src="js/app.js" type="module"></script>
 </body>
 </html>

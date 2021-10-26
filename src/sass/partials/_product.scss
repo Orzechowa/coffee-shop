@@ -1,29 +1,29 @@
 [class^="box-"] {
-    display: flex;
+  display: flex;
      
-    .box-image {
-      width: 400px;
-      height: 100%;
-      overflow: hidden;
-      z-index: 1;
-    }
-  
-    .box-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  
-    .box-description {
-      padding: 36px 55% 36px 0;
-      text-align: center;
-    }
-  
-    .box-image :nth-of-type(2){
-      order: 2;
-      order: 1;
-    }
+  .box-image {
+    width: 400px;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
   }
+  
+  .box-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .box-description {
+    padding: 36px 55% 36px 0;
+    text-align: center;
+  }
+  
+  .box-image :nth-of-type(2){
+    order: 2;
+    order: 1;
+  }
+}
   
   
   
