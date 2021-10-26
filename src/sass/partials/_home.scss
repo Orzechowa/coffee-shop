@@ -5,35 +5,37 @@ header {
   background-position: center center;
   background-size: cover;
   display: flex;
-
 }
 
-.main-nav{
-  text-align: right;
+.main-nav a{
+  text-align: left;
+  text-decoration: none;
   
 }
+.logo__subtitle{
+    font-size: 26px;
+    color: #BEA67C;
+    font-weight: $font-bold;
+    text-align: center;
 
-h2{
-  text-align: center;
-  color: #BEA67C;
-  font-size: 30px;
 }
 
 h1{
   text-align: left;
-  color: #fff
+  color: #fff;
+  font-size: 15px;
+  margin: 0, 10px;
+}
+h1 span{
+    font-size: 10px;
 }
 
-h3 {
-    color: #fff;
-}
 
 [class^="box-"] {
-  position: relative;
+  display: flex;
    
   .box-image {
-    position: absolute;
-    width: 200px;
+    width: 350px;
     height: 100%;
     overflow: hidden;
     z-index: 1;
@@ -45,30 +47,35 @@ h3 {
     object-fit: cover;
   }
 
-  .box-image {
-    right: 0;
-  }
-
   .box-description {
     padding: 36px 55% 36px 0;
-    text-align: right;
+    text-align: center;
   }
 
-  .box-left .box-description {
-    padding: 36px 0 36px 55%;
-    text-align: left;
+  .box-image :nth-of-type(2){
+    order: 2;
+    order: 1;
   }
 }
 
+
+//ABOUT//
 .about {
-    background-image: url("./../../images/background.png");
-    height: 400px;
-    width: auto;
-    background-position: center center;
-    background-size: cover;
-    display: flex;
+  background-image: url("./../../images/about-us.jpg");
+  height: 400px;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  text-align: center;
+  padding-top: 5px;
 }
+.us {
+    text-align: center;
+    font-size: 26px;
+    color: #BEA67C;
 
+}
+// footer//
 footer {
   margin: auto; }
   

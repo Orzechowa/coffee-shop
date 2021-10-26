@@ -19,6 +19,7 @@ const app = {
   },
   
   initSide: function(){
+    const thisApp = this;
        
     
     const sides = document.querySelector(select.containerOf.sides).children;
@@ -46,7 +47,7 @@ const app = {
         const id = clickedElement.getAttribute('href').replace('#', '');
     
         /* run thisApp.activatePage with that id */
-        this.activateSide(id);
+        thisApp.activateSide(id);
     
         /* change URL hash */
         window.location.hash = '#/' + id;
