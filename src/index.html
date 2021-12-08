@@ -17,12 +17,17 @@
   <header class="header">
     <div class="container">
         <div class="main-nav">
-          <h1> EL TIGRE<br><span>VENEZUELA COFFEE BEANS</span></h1>
-          <a href="#home">Home</a>
-          <a href="#products">Products</a>
-          <a href="#contact">Contact</a>
+          <h1 class="page-title"> EL TIGRE<br><span>VENEZUELA COFFEE BEANS</span></h1>
+          <div>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact</a>
+          </div>
         </div>
-        <h2 class="logo__subtitle">HOME OF<br> ORIGINAL TASTE </h2>
+        <h2 class="logo__subtitle">HOME OF<br><span> ORIGINAL TASTE </span>
+          <div>
+          </div>
+        </h2>
     </div>
   </header>
   <div id="sides">
@@ -83,17 +88,17 @@
       </section>
   </script>
   <script id="template-product" type="text/x-handlebars-template">
-    <div class="box-product">
-      <div class="box-image">
+      <article class="box-product">
+        <div class="box-image">
           {{{ image }}}
-      </div>
-      <div class="box-description">
+        </div>
+        <div class="box-description">
           <h2 class="product_name"> {{ name }}</h2>
           <p>{{{ description }}}</p>
           <p> ROASTING: {{{ roasting }}} </p>
           <p> INTENSITY: {{{ intensity }}} </p>
-      </div>
-  </div>
+        </div>
+      </article>
   </script>
   <script id="template-product-widget" type="text/x-handlebars-template">
     <div>
@@ -121,7 +126,7 @@
     </div>
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> 
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script src="js/app.js" type="module"></script>
 </body>
 </html>

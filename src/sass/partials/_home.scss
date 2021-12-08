@@ -8,17 +8,43 @@ header {
 }
 
 .main-nav a{
-  text-align: left;
   text-decoration: none;
+  color: #fff;
+  font-weight: $font-bold;
+  text-transform: uppercase;
+  margin: 20px 20px;
+  display: inline-block;
   
+}
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.main-nav .page-title{
+    color:#fff;
+    font-size: 15px;
+    margin: 0, 10px;
+
 }
 
 .logo__subtitle{
-  font-size: 26px;
+  font-size: 35px;
   color: #BEA67C;
   font-weight: $font-bold;
-  text-align: center;
+  margin: 75px auto;
+  width: 375px;
 
+}
+.logo__subtitle span{
+  margin-left: 75px;
+}
+.logo__subtitle div{
+  width: 100px;
+  height: 3px;
+  background: #BEA67C;
+  margin: 20px auto;
 }
 
 h1{
@@ -34,7 +60,6 @@ h1 span{
 
 
 [class^="box-"] {
-  display: flex;
    
   .box-image {
     width: 350px;
@@ -50,14 +75,13 @@ h1 span{
   }
 
   .box-description {
-    padding: 36px 55% 36px 0;
+    padding: 36px;
     text-align: center;
   }
 
-  .box-image :nth-of-type(2){
-    order: 2;
-    order: 1;
-  }
+}
+.box-product:nth-of-type(2) .box-image{
+  order: 2;
 }
 
 /*** carousel ***/

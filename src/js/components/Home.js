@@ -5,8 +5,8 @@ class Home {
     const thisHome = this;
     
     thisHome.render(element);
-    thisHome.initData();
     thisHome.initWidgets();
+    thisHome.initData();  
   }
 
  
@@ -21,6 +21,23 @@ class Home {
     thisHome.dom.wrapper = element;
     thisHome.dom.wrapper.innerHTML = generatedHTML;
 
+  }
+
+  initWidgets(){
+    const thisHome = this;
+
+    setTimeout(() => {
+      thisHome.element = document.querySelector('.main-carousel');
+      thisHome.flkty = new Flickity(thisHome.element, {
+        prevNextButtons: false,
+        wrapAround: true,
+        autoPlay: 3000,
+        cellAlign: 'left',
+        contain: true,
+      });
+    }, 2000);
+
+    
   }
   initData() {
     const url = settings.db.url + '/' + settings.db.products;
@@ -39,23 +56,6 @@ class Home {
       const html= templates.product(product);
       productsList.innerHTML+=html;
     }
-  }
-
-  initWidgets(){
-    const thisHome = this;
-
-    setTimeout(() => {
-      thisHome.element = document.querySelector('.main-carousel');
-      thisHome.flkty = new Flickity(thisHome.element, {
-        prevNextButtons: false,
-        wrapAround: true,
-        autoPlay: 3000,
-        cellAlign: 'left',
-        contain: true,
-      });
-    }, 2000);
-
-    
   }
     
 }
