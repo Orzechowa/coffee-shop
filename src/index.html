@@ -32,7 +32,7 @@
   </header>
   <div id="sides">
     <section id="home">
-      <div class="home-wrapper container"></div>
+      <div class="home-wrapper"></div>
     </section>
     <section id="products">
       <div class="products-wrapper container"></div>
@@ -48,44 +48,18 @@
     </div>
   </footer>
   <script id="template-home-widget" type="text/x-handlebars-template">
-    <section class="home-container">
+    <section class="home-container container"">
       <h2 class="page-title"> PRODUCTS <hr style="width: 40%; background: #BEA67C; height: 5px"></h2>
       <div class="box-main">
        
       </div>
     </section>
-    <section class="main-carousel">
-      <article class="carousel-cell">
-        <div class="carousel-image">
-          <img src="images/1.png">
-        </div>
-        <div class="carousel-post">
-          <h1> ABOUT US <hr style="width: 40%; background: #BEA67C; height: 5px"></h1>
-          <h3>Ping Nihao</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-      </article>
-      <article class="carousel-cell">
-        <div class="carousel-image">
-          <img src="images/2.png">
-        </div>
-        <div class="carousel-post">
-          <h1> ABOUT US <hr style="width: 40%; background: #BEA67C; height: 5px"></h1>
-          <h3>Max Selfish/h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-      </article>
-      <article class="carousel-cell">
-        <div class="carousel-image">
-          <img src="images/3.png">
-        </div>
-        <div class="carousel-post">
-          <h1> ABOUT US <hr style="width: 40%; background: #BEA67C; height: 5px"></h1>
-          <h3>Elizabeth Doherty</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-      </article>  
-      </section>
+    <section class="about-us">
+      <h2 class="page-title"> About us <hr style="width: 40%; background: #BEA67C; height: 5px"></h2>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+      <p>Join us!</p>
+    </section>
   </script>
   <script id="template-product" type="text/x-handlebars-template">
       <article class="box-product">
@@ -93,10 +67,10 @@
           {{{ image }}}
         </div>
         <div class="box-description">
-          <h2 class="product_name"> {{ name }}</h2>
+          <h2 class="product_name"> {{ id }}. {{ title }}</h2>
           <p>{{{ description }}}</p>
-          <p> ROASTING: {{{ roasting }}} </p>
-          <p> INTENSITY: {{{ intensity }}} </p>
+          <p> <span>ROASTING:</span> {{{ roasting }}} </p>
+          <p> <span>INTENSITY:</span> {{{ intensity }}} </p>
         </div>
       </article>
   </script>

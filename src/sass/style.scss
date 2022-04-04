@@ -1,5 +1,9 @@
 // normalize default styles
 
+* {
+  box-sizing: border-box;
+}
+
 @import "partials/normalize";
 
 // Bootstrap
